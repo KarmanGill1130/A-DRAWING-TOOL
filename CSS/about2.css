@@ -1,0 +1,307 @@
+:root {
+    --primary: #7d141d;
+    --secondary: #a41b27;
+    --accent: #db9395;
+    --light-accent: #f4e7e7;
+    --text: #2C1810;
+    --background: #faf6f6;
+    }
+.search input:focus{
+      outline: none;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--text);
+  line-height: 1.6;
+}
+header{
+  position:sticky;
+  width:100%;
+  top:0;
+  right:0;
+  display:flex;
+  justify-content: space-between;
+  align-items:center;
+  padding: 18px 100px; 
+  transition: 0.5s linear;
+  background-color: var(--background);
+  font-family: "Poppins",'sans-serrif';
+  height:100px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  background-color:#f0f0f0;
+}
+.logo img{
+  max-width:none;
+}
+.navbar{
+  display: flex;
+}
+.navbar a{
+  /* padding:8px 17px; */
+  /* gap: 10px; */
+  color: var(--text-color);
+  font-size: 18px;
+  text-transform: uppercase;
+  /* font-weight:800; */
+  /* font-style: bold; */
+  text-decoration: none;
+}
+
+/* .navbar a:hover{
+  background-color:#7d141d;
+  border-radius: 0.2rem;
+  transition: 0.2s all linear;
+} */
+
+.navbar li{
+  list-style: none;
+  gap: 10px;
+}
+
+.header-icon {
+  margin-left: 20px;
+  font-size: 22px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  gap: 20px; /* Adds spacing between icons */
+  align-items: center; /* Aligns icons vertically */
+}
+
+.header-icon .bx {
+  color: var(--text-color); /* Ensures consistent icon color */
+  transition: color 0.3s ease; /* Smooth hover effect */
+}
+
+.header-icon .bx:hover {
+  color: var(--main-color); /* Changes icon color on hover */
+}
+
+.search-box{
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%);
+  background: var(--text-color);
+  width: 100%;
+}
+.search-box input{
+  padding: 20px;
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 1rem;
+  color: var(--main-color);
+}
+.search-box input::placeholder{
+  font-size: 1rem;
+  font-weight: 500;
+}
+footer{
+  background-color:rgba(76, 49, 40, 0.1);
+  padding:80px 20px;
+  color:#b0967c;
+  position:relative;
+  overflow-x:hidden;
+  height:400px;
+  text-align: left;
+}
+.footer-container{
+  display:flex;
+  justify-content:center;
+  max-width:90%;
+  margin:0 auto;
+  flex-wrap:wrap;
+  gap:20px;
+}
+.footer-container .footer-section img{
+  background-color:#b0967c ;
+}
+.input-info{
+  align-content: center;
+  margin-top: 15px;
+  padding:10px 20px 10px 20px;
+  margin-left:0;
+  margin-right:0;
+  width:100%;
+  text-align: center;
+}
+.input-info input{
+  text-align: center;
+  font-size: 16px;
+  border-radius:16px;
+  width:400px;
+  padding:10px;
+  color:#000000;
+  background-color:whitesmoke;
+}
+.footer-section{
+  flex: 1;
+  padding:20px;
+  width:100%;
+  text-align:center;
+}
+.newsletter-section{
+  background: #493932;
+}
+.newsletter-div h1{
+  font-size:40px;
+  color:#000000;
+  text-align: center;
+}
+.newsletter-div p{
+  font-size:20px;
+  text-align:center;
+  color:#000000;
+}
+.footer-section h2{
+  font-family:"kefa",serif;
+font-size: 30px;
+margin-bottom:15px;
+}
+.footer-section h2 a{
+  text-decoration:none;
+  color:  #4c3128;
+transition: color 0.3s ease;
+}
+.footer-section h2 a:hover{
+  color:black;
+}
+.footer-section ul{
+  list-style-type:none;
+  padding:0;
+}
+.footer-section ul li{
+  margin-bottom:10px;
+  font-size:16px;
+}
+.navbar{
+  display: flex;
+}
+.navbar a {
+  /* color: white; */
+  color:red;
+  padding: 10px;
+  gap: 20px;
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  position: relative; /* Required for the pseudo-element */
+  transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+.navbar a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 6px; /* Adjust to place underline just below text */
+  width: 0;
+  height: 2px; /* Thickness of underline */
+  background-color: var(--primary); /* Color of underline */
+  transition: width 0.3s ease; /* Animation effect for underline */
+}
+
+a:hover {
+  color: var(--primary); /* Change link color on hover */
+}
+
+a:hover::after {
+  width: 100%; /* Expands underline on hover */
+}
+
+.search{
+  background-color: white;
+  border-radius: 30px;
+  padding: 5px;
+}
+
+.search:hover{
+  border-color: #7d141d;
+  border: 2px solid;
+}
+
+.search input{
+  background-color: transparent;
+  border: none;
+  /* border-radius: 20px; */
+  height: 30px;
+  /* padding: 10px; */
+}
+      .container {
+          max-width: 1200px;
+          margin: 0 auto;
+          padding: 2rem 1rem;
+      }
+
+      .about-section {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-bottom: 4rem;
+      }
+
+      .about-image {
+          flex-basis: 40%;
+          max-width: 400px;
+          height:300px;
+          background-image: url("aboutuspage.jpg");
+          border-radius: 15px;
+          box-shadow: 0 4px 15px rgba(125, 20, 29, 0.1);
+      }
+
+      .about-content {
+          flex-basis: 55%;
+      }
+
+      .about-title {
+          font-size: 2rem;
+          color: var(--primary);
+          margin-bottom: 1rem;
+      }
+
+      .about-text {
+          font-size: 1.1rem;
+          color: #666;
+      }
+
+      .mission-section {
+          background-color: var(--light-accent);
+          padding: 3rem 1rem;
+          text-align: center;
+      }
+
+      .mission-title {
+          font-size: 2rem;
+          color: var(--primary);
+          margin-bottom: 1rem;
+      }
+
+      .mission-text {
+          font-size: 1.1rem;
+          color: #666;
+          max-width: 800px;
+          margin: 0 auto;
+      }
+
+      @media (max-width: 768px) {
+          .about-section {
+              flex-direction: column;
+              text-align: center;
+          }
+
+          .about-image {
+              margin-bottom: 2rem;
+          }
+
+          .about-content {
+              flex-basis: auto;
+          }
+      }
