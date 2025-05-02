@@ -9,8 +9,8 @@ This project is a **Drawing Tool** developed by a team of three members. It prov
 ## 👨‍💻 Team Members
      Name                    ROLL NO.
 1. Jasnoor Singh            2410991116
-2. karmanpreet Singh        2410991130
-3. kunwarpreet Singh        2410991137
+2. Karmanpreet Singh        2410991130
+3. Kunwarpreet Singh        2410991137
 
 ---
 
