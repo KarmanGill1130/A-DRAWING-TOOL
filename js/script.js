@@ -72,7 +72,7 @@ const drawTriangle = (e) => {
     fillColor.checked ? ctx.fill() : ctx.stroke();
 };
 
-
+//this is js file
 
 
 const drawStar = (e) => {
