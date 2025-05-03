@@ -5,19 +5,20 @@
 
 .main{
     width: 100%;
-    /* background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url(1.jpg); */
+    /* background: linear-gradient(to top, rgb a(0,0,0,0.5) 50%,rgba(0,0,0,0.5)50% ), url(1.jpg); */
     background:url(LOGIN.jpg);
     background-position: center;
     background-size: cover;
     height: 100vh;
 }
-
+/* yo */
 .navbar{
     width: 1200px;
     height: 75px;
     margin: auto;
 }
-
+/* yo
+*/
 .icon{
     width: 200px;
     float: left;
